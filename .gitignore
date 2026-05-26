@@ -1,0 +1,8 @@
+config.json
+auth.json
+captcha.png
+attendance-result.png
+node_modules/
+encrypteddata
+.DS_Store
+eng.traineddata

@@ -1,0 +1,50 @@
+{
+  "baseUrl": "http://my.gzsums.net:1198/wap/index",
+  "authFile": "auth.json",
+  "headless": false,
+  "keepOpen": true,
+  "interactive": true,
+  "geolocation": {
+    "enabled": true,
+    "latitude": 23.132443,
+    "longitude": 113.297552,
+    "accuracy": 30
+  },
+  "username": "",
+  "password": "",
+  "selectors": {
+    "username": "input[name='username'], input[name='account'], input[type='tel'], input[type='text']",
+    "password": "input[name='password'], input[type='password']",
+    "captchaInput": "input[name='captcha'], input[name='verifyCode'], input[name='code'], input[placeholder*='验证码']",
+    "captchaImage": "img[src*='captcha'], img[src*='verify'], img[src*='code'], canvas",
+    "submit": "#login, .login, .login-btn, .btn-login, button[type='submit'], input[type='submit'], input[value='登录'], button:has-text('登录'), a:has-text('登录')"
+  },
+  "attendance": {
+    "enabled": false,
+    "entryText": "实习签到",
+    "url": "/Wap/WapExStuLog",
+    "autoConfirm": true,
+    "resultScreenshot": "attendance-result.png",
+    "successTexts": ["待确认", "已签到", "已确认", "签到成功"],
+    "morning": {
+      "label": "上午",
+      "start": "05:00",
+      "end": "08:00"
+    },
+    "afternoon": {
+      "label": "下午",
+      "start": "13:00",
+      "end": "14:30"
+    }
+  },
+  "captcha": {
+    "ocr": true,
+    "manualFallback": true,
+    "minConfidence": 0,
+    "maxAttempts": 3,
+    "refreshSelector": "",
+    "expectedLength": 4,
+    "characters": "numeric",
+    "preprocess": true
+  }
+}

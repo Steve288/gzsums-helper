@@ -1,0 +1,21 @@
+{
+  "name": "gzsums-mobile-helper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "login": "node src/index.js --login",
+    "auto": "node src/index.js --login --auto",
+    "sign": "node src/index.js --sign --auto",
+    "sign-dry-run": "node src/index.js --sign --auto --dry-run",
+    "sign-watch": "node src/index.js --sign",
+    "auto-sign": "node src/index.js --login --auto --sign",
+    "reset-auth": "rm -f auth.json"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0",
+    "tesseract.js": "^5.1.1"
+  },
+  "devDependencies": {}
+}
