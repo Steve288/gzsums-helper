@@ -41,7 +41,7 @@
     "ocr": true,
     "manualFallback": true,
     "minConfidence": 0,
-    "maxAttempts": 3,
+    "maxAttempts": 10,
     "refreshSelector": "",
     "expectedLength": 4,
     "characters": "numeric",
