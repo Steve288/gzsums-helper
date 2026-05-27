@@ -1,4 +1,4 @@
-# GZSUMS Mobile Helper
+# GZSUMS Helper
 
 这是一个基于 Node.js、Playwright 和 Tesseract.js 的本地网页辅助脚本，用手机端视口打开目标网页，支持登录状态复用、验证码识别，以及在指定时间段执行实习签到。
 
