@@ -14,8 +14,8 @@ const DEFAULT_CONFIG = {
   interactive: true,
   geolocation: {
     enabled: true,
-    latitude: 23.132443,
-    longitude: 113.297552,
+    latitude: 23.132515,
+    longitude: 113.297492,
     accuracy: 30
   },
   username: '',

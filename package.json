@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "start": "node src/index.js",
     "login": "node src/index.js --login",
@@ -11,7 +14,9 @@
     "sign-dry-run": "node src/index.js --sign --auto --dry-run",
     "sign-watch": "node src/index.js --sign",
     "auto-sign": "node src/index.js --login --auto --sign",
-    "reset-auth": "rm -f auth.json"
+    "install-browsers": "npx playwright install chromium",
+    "reset-auth": "node scripts/reset-auth.js",
+    "check": "node --check src/index.js && node --check scripts/reset-auth.js"
   },
   "dependencies": {
     "playwright": "^1.52.0",
