@@ -2,33 +2,7 @@
 
 这是一个基于 Node.js、Playwright 和 Tesseract.js 的本地网页辅助脚本，用手机端视口打开目标网页，支持登录状态复用、验证码识别，以及在指定时间段执行实习签到。
 
-目标网页需要能从运行脚本的电脑或服务器访问。GitHub Actions 这类云端运行环境通常访问不到内网或受限网站，不建议用来运行本项目。
-
-## 上传到 GitHub 前
-
-建议上传这些内容：
-
-- `src/`
-- `scripts/`
-- `README.md`
-- `config.example.json`
-- `package.json`
-- `package-lock.json`
-- `.gitignore`
-- `.gitattributes`
-
-不要上传这些内容：
-
-- `config.json`：可能包含账号、密码、定位坐标等个人配置。
-- `auth.json`：浏览器登录态，里面有 Cookie 或 Token。
-- `.env`、`.env.*`：常见的本地密钥文件。
-- `node_modules/`：依赖目录，别人安装时会自动生成。
-- `captcha*.png`、`attendance-*.png`、`login-after-submit.png` 等截图：可能包含姓名、学校、签到状态或验证码。
-- `*.traineddata`、`encrypteddata`、`.DS_Store`：本地缓存或系统文件。
-
-这些文件已经写进 `.gitignore`。如果你曾经把账号密码、Cookie、Token 或截图推到公开仓库，请先修改密码或让旧登录态失效，再清理 Git 历史。
-
-如果发布到已有 GitHub 仓库，并且远端之前放过 `.github/workflows/auto-sign.yml`，建议删掉它。这个项目更适合在自己的电脑、宿舍/家里服务器、NAS、云主机或 Windows 任务计划中运行。
+目标网页需要能从运行脚本的电脑或服务器访问，GitHub Actions 这类云端运行环境可能访问不到网站。
 
 ## 环境要求
 
